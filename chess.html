@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="chess.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<!--<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>-->
+	<link rel="stylesheet" type="text/css" href="font-awesome-animation.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-5.14.0/css/all.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+		  		<table id="chessboard">
+		  			<tbody></tbody>
+		  		</table>
+			</div>
+			<div class="col-md-6">
+				<p>Номер хода: <span id="turn-num">1</span></p>
+		  		<p>Ходят <span id="turn"></span></p>
+		  		<!-- <p>Глобальное состояние: <span id="state"></span></p> -->
+		  		<p><button type="button" id="restart" class="btn btn-light">Заново</button></p>
+		  		<p><span id="check-mate-status"></span></p>
+		  		<div id="promotion" style="display:none">
+		  			<p><span>Заменить пешку на:</span></p>
+		  			<p><a href="#" class="prom" data-chesspiece="queen">Ферзя</a></p>
+		  			<p><a href="#" class="prom" data-chesspiece="bishop">Слона</a></p>
+		  			<p><a href="#" class="prom" data-chesspiece="knight">Коня</a></p>
+		  			<p><a href="#" class="prom" data-chesspiece="rook">Ладью</a></p>
+		  		</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="chess.js"></script>
+	<script src="setup.js"></script>
+
+</body>
+</html>

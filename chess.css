@@ -1,0 +1,33 @@
+#chessboard {
+	border-collapse: collapse;
+}
+
+#chessboard td{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.square-available {
+	/*border: 3px solid green !important;*/ 
+}
+
+.occupied {
+	cursor: pointer;
+}
+
+.square-wh {
+	background-color: #fffbdb;
+}
+
+.square-bl {
+	background-color: #8e2426;
+}
+
+.piece-wh {
+	color: #ffbe85;
+}
+
+.piece-bl {
+	color: black;
+}
